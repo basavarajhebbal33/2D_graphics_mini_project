@@ -25,7 +25,7 @@ void displayCanvas() {
 
 // Draw rectangle
 void drawRectangle(int x, int y, int w, int h) {
-    for (int i = x; i < x + h && i < ROWS; i++) {
+    for (int i = x; i < x + h && i < ROWS; i++) {                     //x,y initial coordinates and height and width are mentioned for rectangle
         for (int j = y; j < y + w && j < COLS; j++) {
             if (i == x || i == x + h - 1 || j == y || j == y + w - 1)
                 canvas[i][j] = '*';
@@ -49,7 +49,4 @@ void drawLine(int x1, int y1, int x2, int y2) {
 // Clear canvas
 void clearCanvas() {
     initCanvas();
-}
-
-
 }
